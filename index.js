@@ -155,20 +155,3 @@ router.get('/cmsi185/homework/7', function(req, res) {
 router.get('/cmsi185/homework/8', function(req, res) {
 	res.render('./cmsi185/homework/homework8', {title: 'Homework 8', course: 'cmsi185'});
 });
-
-/* GET CMSI 186 home page. */
-router.get('/cmsi186', function(req, res) {
-  res.render('./cmsi186/syllabus', { title: 'Syllabus', course: 'cmsi186'});
-});
-
-/* GET CMSI 186 course notes page. */
-router.get('/cmsi186/courseNotes', function(req, res) {
-	res.render('./cmsi186/courseNotes', {title: 'Course Notes', course: 'cmsi186'});
-});
-
-/* GET CMSI 186 homework page. */
-router.get('/cmsi186/homework', function(req, res) {
-	res.render('./cmsi186/homework', {title: 'Homework', course: 'cmsi186'});
-});
-
-module.exports = router;
